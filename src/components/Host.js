@@ -1,9 +1,10 @@
 import React from 'react';
 
-const Host = () => {
+const Host = ({host}) => {
     return (
-        <div>
-            
+        <div className="host-container">
+            <img src={host.picture} alt={host.name} />
+            <span>{host.name}</span>
         </div>
     );
 };

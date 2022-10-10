@@ -1,15 +1,17 @@
 import React from 'react';
 import '../assets/styles/card.css'
 
-const Card = ({title, cover}) => {
+const Card = ({title, cover, idUrl}) => {
+    const url = '/logement/' + idUrl
     return (
-        <div className="card" style={{
+        <a href={url} className="card" style={{
             backgroundImage: `url(${cover}), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%)`
         }}>
-            <p className="card-desc">
+            <span className="card-desc">
                 {title}
-            </p>
-        </div>
+            </span>
+
+        </a>
     );
 };
 

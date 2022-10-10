@@ -5,6 +5,9 @@ import Header from "../components/Header";
 import Accordion from "../components/Accordion";
 import Host from "../components/Host";
 import Rating from "../components/Rating";
+import Slider from "../components/Slider";
+import Tags from "../components/Tags";
+import Footer from "../components/Footer";
 
 const Logement = () => {
     const { logementId } = useParams()
@@ -14,19 +17,25 @@ const Logement = () => {
             logement = data[i]
         }
     }
-    console.log(typeof logement.description)
+
 
     return (
-        <div>
+        <>
             <Header />
-            <img src={logement.cover} />
-            <h2>{logement.title}</h2>
-            <h4>{logement.location}</h4>
-            <Host />
-            <Rating />
-            <Accordion title="Equipements" content={logement.equipments} />
-            <Accordion title="Description" content={logement.description} />
-        </div>
+            <main>
+                <Slider slides={logement.pictures}/>
+                <div className="logement-title">
+                    <h2>{logement.title}</h2>
+                    <h4>{logement.location}</h4>
+                </div>
+                <Host host={logement.host} />
+                <Rating rate={logement.rating} />
+                <Tags tag={logement.tags}/>
+                <Accordion title="Equipements" content={logement.equipments} />
+                <Accordion title="Description" content={logement.description} />
+            </main>
+            <Footer />
+        </>
     );
 };
 

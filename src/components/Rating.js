@@ -1,10 +1,13 @@
 import React from 'react';
 
-const Rating = () => {
+const Rating = ({rate}) => {
+    const max = 5
+    let note = 5 - rate
+    console.log(note)
     return (
-        <div>
-            
-        </div>
+        <>
+
+        </>
     );
 };
 

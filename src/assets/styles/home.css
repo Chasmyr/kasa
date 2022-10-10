@@ -1,0 +1,21 @@
+.img-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 223px;
+    border-radius: 25px;
+    background: black url("../images/home.jpg");
+    mix-blend-mode: darken;
+}
+.img-home > h2 {
+    color: white;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #F6F6F6;
+    padding: 56px 50px 6px 50px;
+    border-radius: 25px;
+    margin-top: 43px;
+}

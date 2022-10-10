@@ -6,6 +6,11 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+.nav-item {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+}
 .nav-link {
     color: #FF6060;
     font-size: 24px;
