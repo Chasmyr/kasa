@@ -1,0 +1,24 @@
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #F6F6F6;
+    padding: 56px 50px 6px 50px;
+    border-radius: 25px;
+    margin-top: 43px;
+}
+
+.card {
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    background-color: #FF6060;
+    background-position: center;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.card-desc {
+    color: white;
+    margin: 0px 20px 20px 20px;
+}

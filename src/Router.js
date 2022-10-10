@@ -14,7 +14,7 @@ const Routeur = () => {
                 </Route>
                 <Route exact path="*" element={<Error />}>
                 </Route>
-                <Route exact path="/logement" element={<Logement />}>
+                <Route exact path="/logement/:logementId" element={<Logement />}>
                 </Route>
             </Routes>
         </Router>

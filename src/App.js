@@ -1,10 +1,10 @@
 import Routeur from "./Router";
+import './assets/styles/global.css'
 
 
 function App() {
   return (
       <div>
-          <h1>Bienvenue</h1>
           <Routeur />
       </div>
   );
