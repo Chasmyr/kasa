@@ -16,10 +16,14 @@ const Slider = ({slides}) => {
     return (
         <div>
             <div className="slider-container">
-                <span onClick={prevSlide} className="slideOptions slideOption-1"><i
-                    className="fa-solid fa-chevron-left"></i></span>
-                <span onClick={nextSlide} className="slideOptions slideOption-2"><i
-                    className="fa-solid fa-chevron-right"></i></span>
+                {slides[1] != null ?
+                    <>
+                        <span onClick={prevSlide} className="slideOptions slideOption-1"><i
+                            className="fa-solid fa-chevron-left"></i></span>
+                        <span onClick={nextSlide} className="slideOptions slideOption-2"><i
+                            className="fa-solid fa-chevron-right"></i></span>
+                    </>
+                 : null }
                 {slides.map((id, index) => {
                     return (
                         <>

@@ -14,6 +14,9 @@ const About = () => {
         <>
             <Header />
             <main className="aboutMain">
+                <div className="about-img">
+
+                </div>
                 <div className="about-container">
                     <div className="about-item">
                         <Accordion title="Fiabilité" content={fiable}/>

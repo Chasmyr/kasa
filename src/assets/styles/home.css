@@ -19,3 +19,40 @@
     border-radius: 25px;
     margin-top: 43px;
 }
+@media screen and (max-width: 1240px){
+    .img-home {
+        width: 900px;
+    }
+    .homeMain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 780px;
+    }
+}
+@media screen and (max-width: 900px){
+    .img-home {
+        width: 600px;
+    }
+    .card-container {
+        grid-template-columns: 1fr;
+        width: 340px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .card-container {
+        padding: 20px 20px 0 20px;
+    }
+    .img-home {
+        width: 335px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .card-container {
+        background-color: white;
+        margin-top: 0;
+    }
+}

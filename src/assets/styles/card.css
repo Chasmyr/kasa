@@ -24,3 +24,12 @@
     margin: 0px 20px 20px 20px;
     text-decoration: none;
 }
+@media screen and (max-width: 600px) {
+    .card-parent {
+        height: 255px;
+        margin-bottom: 20px;
+    }
+    .card {
+        height: 255px;
+    }
+}
