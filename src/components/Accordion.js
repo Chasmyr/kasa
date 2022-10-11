@@ -12,7 +12,7 @@ const Accordion = ({title, content}) => {
                     onClick={() => setIsActive(!isActive)}
                     >
                         <div className="accordion-title">{title}</div>
-                        <div className="accordion-icon">{isActive ? '-' : '+'}</div>
+                        <div className="accordion-icon">{isActive ? <i className="fa-solid fa-chevron-down" style={{ transform: 'rotate(180deg)' }}></i> : <i className="fa-solid fa-chevron-down"></i> }</div>
                     </div>
                     {isActive && <div className="accordion-content">
                         {typeof content === 'string' ?

@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
 }
 .slide {
     width: 1240px;
@@ -14,5 +15,18 @@
 .center-crop {
     min-width: 100%;
     min-height: 100%;
-
+}
+.slideOptions {
+    color: white;
+    height: 0;
+    font-size: 80px;
+    position: relative;
+    top: 160px;
+    cursor: pointer;
+}
+.slideOption-1 {
+    right: 45%;
+}
+.slideOption-2 {
+    left: 45%;
 }

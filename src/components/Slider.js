@@ -16,13 +16,15 @@ const Slider = ({slides}) => {
     return (
         <div>
             <div className="slider-container">
-                <span onClick={prevSlide}>Précédent</span>
-                <span onClick={nextSlide}>Suivant</span>
+                <span onClick={prevSlide} className="slideOptions slideOption-1"><i
+                    className="fa-solid fa-chevron-left"></i></span>
+                <span onClick={nextSlide} className="slideOptions slideOption-2"><i
+                    className="fa-solid fa-chevron-right"></i></span>
                 {slides.map((id, index) => {
                     return (
                         <>
                             {index === current && (
-                                <div key={index + id} className="slide" style={{ backgroundImage: `url(${id})` }}>
+                                <div key={index + id + 'slide'} className="slide" style={{ backgroundImage: `url(${id})` }}>
                                 </div>
                             )}
                         </>

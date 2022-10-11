@@ -1,9 +1,11 @@
-span {
-    font-size: 30px;
-}
+
 .active {
     color: #FF6060;
+    font-size: 30px;
+    letter-spacing: 7px;
 }
 .negative {
     color: #E3E3E3;
+    font-size: 30px;
+    letter-spacing: 7px;
 }
