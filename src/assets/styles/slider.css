@@ -1,13 +1,15 @@
 .slider-container {
-    max-width: 1240px;
-    max-height: 415px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .slide {
     width: 1240px;
     height: 415px;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
-    overflow: hidden;
+    border-radius: 25px;
 }
 .center-crop {
     min-width: 100%;

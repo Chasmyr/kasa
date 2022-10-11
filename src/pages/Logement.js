@@ -8,6 +8,7 @@ import Rating from "../components/Rating";
 import Slider from "../components/Slider";
 import Tags from "../components/Tags";
 import Footer from "../components/Footer";
+import '../assets/styles/logement.css'
 
 const Logement = () => {
     const { logementId } = useParams()
@@ -24,15 +25,19 @@ const Logement = () => {
             <Header />
             <main>
                 <Slider slides={logement.pictures}/>
-                <div className="logement-title">
-                    <h2>{logement.title}</h2>
-                    <h4>{logement.location}</h4>
+                <div className="col-1">
+                    <div className="logement-title">
+                        <h2>{logement.title}</h2>
+                        <h4>{logement.location}</h4>
+                    </div>
+                    <Tags tag={logement.tags}/>
+                    <Accordion title="Description" content={logement.description} />
                 </div>
-                <Host host={logement.host} />
-                <Tags tag={logement.tags}/>
-                <Rating rate={logement.rating} />
-                <Accordion title="Equipements" content={logement.equipments} />
-                <Accordion title="Description" content={logement.description} />
+                <div className="col-2">
+                    <Host host={logement.host} />
+                    <Rating rate={logement.rating} />
+                    <Accordion title="Equipements" content={logement.equipments} />
+                </div>
             </main>
             <Footer />
         </>

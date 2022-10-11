@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import '../assets/styles/slider.css'
 
 const Slider = ({slides}) => {
     const [current, setCurrent] = useState(0)
@@ -14,16 +15,17 @@ const Slider = ({slides}) => {
 
     return (
         <div>
-            <span onClick={prevSlide}>Précédent</span>
-            <span onClick={nextSlide}>Suivant</span>
             <div className="slider-container">
+                <span onClick={prevSlide}>Précédent</span>
+                <span onClick={nextSlide}>Suivant</span>
                 {slides.map((id, index) => {
                     return (
-                        <div key={index} className="slide">
+                        <>
                             {index === current && (
-                                <img src={id} className="center-crop"/>
+                                <div key={index + id} className="slide" style={{ backgroundImage: `url(${id})` }}>
+                                </div>
                             )}
-                        </div>
+                        </>
                     )
                 })}
             </div>

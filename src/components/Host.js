@@ -1,10 +1,11 @@
 import React from 'react';
+import '../assets/styles/host.css'
 
 const Host = ({host}) => {
     return (
         <div className="host-container">
-            <img src={host.picture} alt={host.name} />
-            <span>{host.name}</span>
+            <span className="host-name">{host.name}</span>
+            <img src={host.picture} alt={host.name} className="host-img"/>
         </div>
     );
 };
