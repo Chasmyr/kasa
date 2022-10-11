@@ -29,8 +29,8 @@ const Logement = () => {
                     <h4>{logement.location}</h4>
                 </div>
                 <Host host={logement.host} />
-                <Rating rate={logement.rating} />
                 <Tags tag={logement.tags}/>
+                <Rating rate={logement.rating} />
                 <Accordion title="Equipements" content={logement.equipments} />
                 <Accordion title="Description" content={logement.description} />
             </main>

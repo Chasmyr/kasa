@@ -1,0 +1,16 @@
+.slider-container {
+    max-width: 1240px;
+    max-height: 415px;
+}
+.slide {
+    width: 1240px;
+    height: 415px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.center-crop {
+    min-width: 100%;
+    min-height: 100%;
+
+}

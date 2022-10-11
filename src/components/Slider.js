@@ -16,15 +16,17 @@ const Slider = ({slides}) => {
         <div>
             <span onClick={prevSlide}>Précédent</span>
             <span onClick={nextSlide}>Suivant</span>
-            {slides.map((id, index) => {
-                return (
-                    <div key={index}>
-                        {index === current && (
-                            <img src={id} />
-                        )}
-                    </div>
-                )
-            })}
+            <div className="slider-container">
+                {slides.map((id, index) => {
+                    return (
+                        <div key={index} className="slide">
+                            {index === current && (
+                                <img src={id} className="center-crop"/>
+                            )}
+                        </div>
+                    )
+                })}
+            </div>
         </div>
     );
 };
