@@ -1,9 +1,20 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import '../assets/styles/accordion.css'
+import {useLocation} from "react-router-dom";
 
 const Accordion = ({title, content}) => {
 
     const [isActive, setIsActive] = useState(false)
+    const [isAbout, setIsAbout] = useState(false)
+    let location = useLocation()
+    useEffect(() => {
+        if (location.pathname === '/about') {
+            setIsAbout(true)
+        } else {
+            setIsAbout(false)
+        }
+    }, [location])
+
     return (
         <>
             <div className="accordion">
@@ -16,7 +27,11 @@ const Accordion = ({title, content}) => {
                     </div>
                     {isActive && <div className="accordion-content">
                         {typeof content === 'string' ?
-                        <span className="accordion-content-full">{content}</span> :
+                            isAbout === true ?
+                                    <span className="accordion-content-full" style={{ fontSize: '24px', minHeight: '20px'}}>{content}</span>
+                                    : <span className="accordion-content-full" style={{ fontSize: '18px', minHeight: '190px'}}>{content}</span>
+
+                            :
                         <ul>
                             {content.map((id, index) => (
                                 <li key={id}>{content[index]}</li>

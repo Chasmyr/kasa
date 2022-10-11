@@ -12,12 +12,11 @@
 }
 .accordion-content {
     background-color: #F6F6F6;
-    min-height: 200px;
     z-index: -1;
     border-radius: 10px;
     position: relative;
     top: -5px;
-    padding: 35px 12px 0 20px;
+    padding: 35px 12px 15px 20px;
     color: #FF6060;
     transition: all 0.15s ease-out;
 }
@@ -28,9 +27,6 @@
     padding-left: 0;
 }
 
-.accordion-content-full {
-    font-size: 18px;
-}
 .fa-chevron-down {
     margin-right: 18px;
     color: white;

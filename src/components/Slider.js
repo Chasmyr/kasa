@@ -24,7 +24,7 @@ const Slider = ({slides}) => {
                     return (
                         <>
                             {index === current && (
-                                <div key={index + id + 'slide'} className="slide" style={{ backgroundImage: `url(${id})` }}>
+                                <div key={index} className="slide" style={{ backgroundImage: `url(${id})` }}>
                                 </div>
                             )}
                         </>
