@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {Fragment, useState} from 'react';
 import '../assets/styles/slider.css'
 
 const Slider = ({slides}) => {
@@ -26,12 +26,12 @@ const Slider = ({slides}) => {
                  : null }
                 {slides.map((id, index) => {
                     return (
-                        <>
+                        <Fragment key={id + index }>
                             {index === current && (
-                                <div key={index} className="slide" style={{ backgroundImage: `url(${id})` }}>
+                                <div key={id} className="slide" style={{ backgroundImage: `url(${id})` }}>
                                 </div>
                             )}
-                        </>
+                        </Fragment>
                     )
                 })}
             </div>

@@ -32,7 +32,7 @@ const Accordion = ({title, content}) => {
                                     : <span className="accordion-content-full" style={{ fontSize: '18px', minHeight: '190px'}}>{content}</span>
 
                             :
-                        <ul>
+                        <ul className="accordion-content-list">
                             {content.map((id, index) => (
                                 <li key={id}>{content[index]}</li>
                                 ))}

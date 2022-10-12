@@ -56,3 +56,67 @@
     grid-row: 3;
     margin-top: 20px;
 }
+@media screen and (max-width: 1240px){
+    .logeMain {
+        grid-template-columns: 1fr 900px 1fr;
+    }
+    .logement-title {
+        grid-column: 2/3;
+    }
+    .tags {
+        grid-column: 2/3;
+        grid-row: 3;
+    }
+    .host {
+        grid-column: 2/3;
+        grid-row: 3;
+    }
+    .rating {
+        grid-column: 2/3;
+        grid-row: 4;
+    }
+    .equip {
+        grid-column: 2/3;
+        grid-row: 6;
+        padding: 0;
+    }
+    .desc {
+        grid-column: 2/3;
+        grid-row: 5;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 900px){
+    .logeMain {
+        grid-template-columns: 1fr 600px 1fr;
+    }
+    .host {
+        grid-row: 4;
+        margin-top: 30px;
+    }
+    .rating {
+        grid-row: 4;
+        margin-top: 30px;
+        justify-content: left;
+        align-items: center;
+    }
+    .desc {
+        grid-row: 6;
+    }
+    .equip {
+        grid-row: 7;
+    }
+
+}
+@media screen and (max-width: 600px){
+    .logeMain {
+        grid-template-columns: 1fr 335px 1fr;
+        margin-bottom: 30px;
+    }
+    .logement-title > h2 {
+        font-size: 18px;
+    }
+    .logement-title > h4 {
+        font-size: 14px;
+    }
+}

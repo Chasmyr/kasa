@@ -31,3 +31,30 @@
 .slideOption-2 {
     left: 45%;
 }
+@media screen and (max-width: 1240px){
+    .slide {
+        width: 900px;
+    }
+    .slideOption-1 {
+        right: 35%;
+    }
+    .slideOption-2 {
+        left: 35%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .slide {
+        width: 600px;
+
+    }
+}
+@media screen and (max-width: 600px) {
+    .slide {
+        width: 335px;
+        height: 255px;
+    }
+    .slideOptions {
+        top: 120px;
+        font-size: 19px;
+    }
+}

@@ -9,3 +9,11 @@
     font-size: 30px;
     letter-spacing: 7px;
 }
+@media screen and (max-width: 600px) {
+    .negative {
+        font-size: 15px;
+    }
+    .active {
+        font-size: 15px;
+    }
+}
