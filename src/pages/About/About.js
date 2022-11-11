@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Accordion from "../components/Accordion";
-import '../assets/styles/about.css'
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+import Accordion from "../../components/Accordion/Accordion";
+import './about.css'
 
 const About = () => {
     const fiable = 'Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements , et toutes les informations sont régulièrement vérifiées par nos équipes.'

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/styles/card.css'
+import './card.css'
 
 const Card = ({title, cover, idUrl}) => {
     const url = '/logement/' + idUrl

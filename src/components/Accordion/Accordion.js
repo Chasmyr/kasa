@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import '../assets/styles/accordion.css'
+import './accordion.css'
 import {useLocation} from "react-router-dom";
 
 const Accordion = ({title, content}) => {

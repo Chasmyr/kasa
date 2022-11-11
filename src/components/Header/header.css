@@ -21,17 +21,17 @@ nav {
         justify-content: center;
     }
     nav {
-        width: 900px;
+        width: 90%;
     }
 }
 @media screen and (max-width: 900px) {
     nav {
-        width: 600px;
+        width: 90%;
     }
 }
 @media screen and (max-width: 600px) {
     nav {
-        width: 350px;
+        width: 100%;
     }
     .header-logo {
         width: 145px;

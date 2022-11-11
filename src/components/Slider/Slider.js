@@ -1,5 +1,5 @@
 import React, {Fragment, useState} from 'react';
-import '../assets/styles/slider.css'
+import './slider.css'
 
 const Slider = ({slides}) => {
     const [current, setCurrent] = useState(0)
@@ -13,6 +13,8 @@ const Slider = ({slides}) => {
         setCurrent(current === 0 ? length - 1 : current - 1)
     }
 
+    let numberOfSlide = `${current +1}/${length}`
+
     return (
         <div>
             <div className="slider-container">
@@ -22,6 +24,7 @@ const Slider = ({slides}) => {
                             className="fa-solid fa-chevron-left"></i></span>
                         <span onClick={nextSlide} className="slideOptions slideOption-2"><i
                             className="fa-solid fa-chevron-right"></i></span>
+                        <span className="slide-number">{numberOfSlide}</span>
                     </>
                  : null }
                 {slides.map((id, index) => {

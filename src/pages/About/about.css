@@ -9,7 +9,7 @@
 .about-img {
     width: 1240px;
     height: 223px;
-    background-image: url("../images/about.png");
+    background-image: url("../../assets/images/about.png");
     border-radius: 25px;
     margin-top: 50px;
 }

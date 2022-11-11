@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/styles/rating.css'
+import './rating.css'
 
 const Rating = ({rate}) => {
 

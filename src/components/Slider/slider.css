@@ -31,6 +31,12 @@
 .slideOption-2 {
     left: 45%;
 }
+.slide-number {
+    font-size: 18px;
+    color: white;
+    position: relative;
+    top: 400px;
+}
 @media screen and (max-width: 1240px){
     .slide {
         width: 900px;
@@ -52,6 +58,9 @@
     .slide {
         width: 335px;
         height: 255px;
+    }
+    .slide-number {
+        top: 240px;
     }
     .slideOptions {
         top: 120px;

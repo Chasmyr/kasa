@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/styles/host.css'
+import './host.css'
 
 const Host = ({host}) => {
     return (

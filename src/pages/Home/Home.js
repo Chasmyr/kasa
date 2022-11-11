@@ -1,8 +1,8 @@
-import Header from "../components/Header";
-import data from '../assets/json/data.json'
-import '../assets/styles/home.css'
-import Card from "../components/Card";
-import Footer from "../components/Footer";
+import Header from "../../components/Header/Header";
+import data from '../../assets/json/data.json'
+import './home.css'
+import Card from "../../components/Card/Card";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
 
